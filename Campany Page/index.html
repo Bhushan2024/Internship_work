@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  -->
+</head>
+<body>
+    <header role="banner">
+      <img class="img" src="https://oytie.com/wp-content/uploads/2020/10/oytie-326x100.png" alt="Oytie" width="175" height="52">
+        <ul class="utilities">
+          <br>
+          <li class="users"><a href="/account/index.html">My Account</a></li>
+          <li class="logout warn"><a href="/account/index2.html">Log Out</a></li>
+        </ul>
+      </header>
+      
+      <nav role='navigation'>
+        <ul class="main">
+          <li class="dashboard"><a ONCLICK="ShowAndHidee()" href="#">Dashboard</a></li>
+          <li class="edit"><a ONCLICK="ShowAndHide()" href="#" >Jobs</a></li>
+          <li class="comments"><a href="#">Ads</a></li>
+          <li class="users"><a href="#">Manage Users</a></li>
+        </ul>
+      </nav>
+      
+      <main role="main">
+        <DIV ID="SectionName" STYLE="display:none">
+          <section class="panel important">
+            <h2>Add Job</h2>
+              <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                <div class="twothirds">
+                  Job title<br/>
+                  <input type="text" name="title" size="40"/><br/><br/>
+                  No. of Candidate<br/>
+                  <input type="text" name="title" size="40"/><br/><br/>
+                  Information<br/>    
+                  <textarea name="newstext" rows="15" cols="67"></textarea><br/>  
+                </div>
+                <div>
+                  <input type="submit" name="submit" value="Save" />
+                </div>
+                </div>
+              </form>
+          </section>
+        </DIV>
+      </main>
+
+      <main role="main">
+        <DIV ID="SectionNamee" STYLE="display:none">
+          <section class="panel important">
+            <div class="dashboard1">
+              <div class="widget">
+                <h2>Jobs Posted</h2>
+                <p>Same details about this dashboard point</p>
+              </div>
+              
+              <div class="widget">
+                <h2>Candidate Message</h2>
+                <p>Same details about this dashboard point</p>
+              </div>
+              
+              <div class="widget">
+                <h2>Hired Candidates</h2>
+                <p>Same details about this dashboard point</p>
+              </div>
+            </div>
+          </section>
+        </DIV>
+      </main>
+      
+
+
+      
+
+      
+</body>
+</html>
