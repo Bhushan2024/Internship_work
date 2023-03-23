@@ -53,7 +53,7 @@ header[role="banner"] h1:before {
 }
 header[role="banner"] .utilities {
   width: 100%;
-  background: slategray;
+  background: #0a1e7d;
   color: #ddd;
   padding-right: 30px;
 }
@@ -128,7 +128,7 @@ nav[role="navigation"] .users a:before {
 }
 
 footer[role="contentinfo"] {
-  background: slategray;
+  background: #0a1e7d;
   color: #ddd;
   font-size: 0.8em;
   text-align: center;
@@ -181,8 +181,13 @@ li {
   margin: 0;
   padding: 0;
 }
+.main{
+  position: relative;
+  top: 15px;
+}
 
 main li {
+
   position: relative;
   padding-left: 1.2em;
   margin: 0.5em 0;
@@ -435,6 +440,8 @@ td {
   }
 
   .panel {
+    position: relative;
+    top: 100px;
     width: 47%;
     clear: none;
   }
@@ -477,3 +484,27 @@ td {
   font-size: 18px;
   text-align: center;
 }
+
+
+.wrapper{
+  width: 1100px;
+  margin: auto;
+}
+.banner{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  /* background-image: url(imgg.jpg); */
+  -webkit-backdrop-size: cover;
+  background-size: cover;
+  background-position: cover center;
+}
+
+.job-area,
+.services-area,
+.portfolio-area,
+.contact-area{
+  height: 100vh;
+}
+
+
