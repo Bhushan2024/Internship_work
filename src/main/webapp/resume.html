@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <script src="js/bootstrap.js"></script>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 border-bottom" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-4 ps-4" href="#"><img src="img/oytie-326x100.png" alt="" id="logo" height="50px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="home.html" id="nav1">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="services.html" id="nav1">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="client.html" id="nav1">Client</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="about_us.html" id="nav1">About Us</a>
+                            </li>
+                            <li class="nav-item pt-3">
+                                <a href="login_sign.html">
+                                    <button class="btn btn-light">SignIn/LogIn</button>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html></header>    <section class="hero-area">
+        <div class="container bg-white" id="cv-form">
+            <h1 class="text-center"> Resume</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Personal information</h3>
+                    <div class="form-group">
+                        <label for="namefield">Your name</label>
+                        <input type="text" id="namefield" placeholder="Enter here" class="form-control">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="contactfield">Your contact number</label>
+                        <input type="text" id="contactfield" placeholder="Enter here" class="form-control">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Your address</label>
+                        <textarea id="addressfield" placeholder="Enter here" class="form-control" rows="6"></textarea>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedinfield">linkedin</label>
+                        <input type="text" id="linkedinf" placeholder="Enter here" class="form-control">
+
+                    </div>
+                    <label for="Gender">Gender</label>
+
+                    <div class="form-check">
+
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Professional information</h3>
+                    <div class="form-group">
+                        <label for="">Objective</label>
+                        <textarea placeholder="Enter here" class="form-control" rows="2" id="ObjectiveField"></textarea>
+
+                    </div>
+                    <div class="form-group" id="WEexperience">
+                        <label for="">Work Experience</label>
+                        <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+                        <div class="container text-center mt-2" id="weaddbutton">
+                            <button onclick="addNewWEField()" class="btn btn-primary">Add</button>
+                        </div>
+
+                    </div>
+                    <div class="form-group" id="Aqexperience">
+                        <label for="">Academic qualification</label>
+                        <textarea placeholder="Enter here" class="form-control eqField" rows="3"></textarea>
+                        <div onclick="addAqField()" class="container text-center mt-2" id="eqaddbutton">
+                            <button class="btn btn-primary">Add</button>
+                        </div>
+
+                    </div>
+                    <div class="form-group" id="projectfill">
+                        <label for="">Projects/Skills</label>
+                        <textarea placeholder="Enter here" class="form-control prField" rows="3"></textarea>
+                        <div onclick="addproject()" class="container text-center mt-2" id="praddbutton">
+                            <button class="btn btn-primary">Add</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container text-center mt-3">
+                <button onclick="genrateresume()" class="btn btn-primary btn-lrg">Generate Resume</button>
+            </div>
+        </div>
+        <div class="container mt-5" id="cv-template">
+            <h3 class="text-center">CV-TEMPLATE</h3>
+            <div class="row">
+                <div class="col-md-4 text-center py-5 bg-white">
+                    <img src="profile.png" alt="" class="img-fluid myimg">
+                    <div class="container ">
+                        <p id="namet1">Your Name</p>
+                        <p id="phonet">Phone no</p>
+                        <p id="adresst">Address</p>
+                        <p id="linkedint">linkedin</p>
+                    </div>
+                </div>
+                <div class="col-md-8 py-5">
+                    <h1 id="namet2" class="text-center" style="font-weight: 900;">YOUR NAME</h1>
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>OBJECTIVES</h3>
+                        </div>
+                        <div id="objectivet" class="card-border">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis expedita
+                                alias
+                                minus magni error saepe amet, tempora totam molestias nihil incidunt, blanditiis,
+                                tenetur
+                                dignissimos ratione at. Odit, nihil! Temporibus sit ab perferendis unde perspiciatis
+                                enim
+                                consectetur cumque modi hic tempore earum dolor repudiandae veniam minus cupiditate
+                                nostrum,
+                                eaque molestias?</p>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>WORK EXPERIENCE</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="wet">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Academic Qualification</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="aqt">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Projects/Skills</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="prot">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, alias.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container mt-3 text-center">
+                    <button type="button" class="btn btn-primary"> Save</button>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button type="button" class="btn btn-primary"> Print </button>
+                </div>
+            </div>
+        </div>
+    </section><script src="script.js"></script></body></html>
